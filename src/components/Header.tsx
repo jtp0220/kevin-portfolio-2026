@@ -3,6 +3,8 @@ import "../styles/index.css";
 import { useState } from "react";
 import { HeaderData } from "../constants";
 
+import Logo from "../assets/svg/logo.svg?react";
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
@@ -20,9 +22,8 @@ interface headerState {
 
 function Name() {
   return (
-    <div className="z-10 text-center md:text-left">
-      <div className="font-lexend text-lg">KEVIN TRAN × PIANO</div>
-      <div className="text-sm">Piano Performance Portfolio</div>
+    <div className="z-10 text-center md:hidden">
+      <Logo className="h-35 w-35" />
     </div>
   );
 }
