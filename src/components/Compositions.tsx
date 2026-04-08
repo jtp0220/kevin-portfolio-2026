@@ -7,7 +7,7 @@ export default function Compositions() {
   return (
     <section id="compositions" className="scroll-m-20 bg-black px-5 py-10 text-white">
       <div className="m-auto max-w-250">
-        <h1 className="font-lexend text-center text-5xl font-semibold">Compositions</h1>
+        <h1 className="font-lexend pb-5 text-center text-5xl font-semibold">Compositions</h1>
 
         {CompositionData.map((value: ExperienceType, index) => (
           <React.Fragment key={index}>
