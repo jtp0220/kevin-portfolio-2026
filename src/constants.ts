@@ -23,8 +23,12 @@ export const HeaderData: HeaderData = {
       href: "#about",
     },
     {
-      label: "Work",
-      href: "#work",
+      label: "Performances",
+      href: "#performances",
+    },
+    {
+      label: "Compositions",
+      href: "#compositions",
     },
     {
       label: "Lessons",
@@ -39,11 +43,11 @@ export const HeaderData: HeaderData = {
 
 export type Experience = {
   title: string;
-  videoLink?: string;
-  description?: string;
+  videoLink: string;
+  description: string;
 };
 
-export const ExperienceData: Experience[] = [
+export const PerformanceData: Experience[] = [
   {
     title: "Liszt/Saint-Saëns — Danse Macabre (Solo Piano Arrangement)",
     videoLink: "https://www.youtube.com/embed/fhAaXLbNXRA",
@@ -74,9 +78,12 @@ export const ExperienceData: Experience[] = [
     videoLink: "https://www.youtube.com/embed/MPALkZP3mu8",
     description: "This video features my performance of Moritz Moszkowski's Piano Concerto No. 2 in E major, Op. 59: III. It was recorded as a submission for a concerto competition. ",
   },
+];
+
+export const CompositionData: Experience[] = [
   {
     title: "Composition: Introduction to Music History - Part III: Finale, Tran (PREVIEW) ",
     videoLink: "https://www.youtube.com/embed/3eTjAX6OVV0",
-    description: `"Introduction to Music History (2026)" is a three-part cantata for soprano, two tenors, and piano. Loosely based on a first-year music history class, it follows Katie, an irritable student trying to understand the final term paper rubric, who consults Peter, her TA, and ultimately confronts Prof. Geiger, the eccentric professor. The first part features Prof. Geiger’s lecture and da capo aria, with piano accompaniment reflecting his wandering thoughts and referencing composers discussed in class. The second part is a duet between Katie and Peter in sonata-allegro form, highlighting Katie’s agitation and Peter’s initial detachment. The final part is a five-part rondo, recalling material from earlier sections and uniting the characters’ musical and narrative arcs. ” `,
+    description: `"Introduction to Music History (2026)" is a three-part cantata for soprano, two tenors, and piano. Loosely based on a first-year music history class, it follows Katie, an irritable student trying to understand the final term paper rubric, who consults Peter, her TA, and ultimately confronts Prof. Geiger, the eccentric professor. <br/><br/> The first part features Prof. Geiger's lecture and da capo aria, with piano accompaniment reflecting his wandering thoughts and referencing composers discussed in class. The second part is a duet between Katie and Peter in sonata-allegro form, highlighting Katie’s agitation and Peter’s initial detachment. The final part is a five-part rondo, recalling material from earlier sections and uniting the characters’ musical and narrative arcs. ” `,
   },
 ];

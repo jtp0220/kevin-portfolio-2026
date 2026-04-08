@@ -1,0 +1,22 @@
+import "../styles/index.css";
+import { CompositionData, type Experience as ExperienceType } from "../constants";
+import Experience from "./Experience";
+import React from "react";
+
+export default function Compositions() {
+  return (
+    <section id="compositions" className="scroll-m-20 bg-black px-5 py-10 text-white">
+      <div className="m-auto max-w-250">
+        <h1 className="font-lexend text-center text-5xl font-semibold">Compositions</h1>
+
+        {CompositionData.map((value: ExperienceType, index) => (
+          <React.Fragment key={index}>
+            <Experience data={value} />
+
+            {index < CompositionData.length - 1 && <div className="h-0.5 w-full bg-black" />}
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
+}
