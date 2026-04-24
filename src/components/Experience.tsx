@@ -7,7 +7,7 @@ export default function Experience({ data }: { data: Experience }) {
       <div className="my-10 border">
         <iframe className="h-120 w-full" src={data.videoLink} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
-      <p className="font-outfit text-xl font-light" dangerouslySetInnerHTML={{ __html: data.description }}></p>
+      <div className="font-outfit text-xl font-light">{data.description}</div>
     </div>
   );
 }
